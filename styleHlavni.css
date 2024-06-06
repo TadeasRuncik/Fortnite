@@ -168,18 +168,6 @@ nav ul li a:hover::before {
   src: url(fontos.ttf);
 }
 
-@media (max-width: 600px) {
-  h4 {
-  color: #54a6da;
-}
-
-h1 {
-  color: white;
-  font-size: 40px;
-  margin: 0;
-  font-family: myFont;
-}
-}
 
 h4 {
   color: #54a6da;
