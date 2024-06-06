@@ -37,23 +37,25 @@
                 </div>
                 <div class="app-contact">Telefon : +420 775 199 099 </div>
               </div>
-              <div class="screen-body-item">
+              <form  action="mailto:tadeasruncik@post.cz" method="post" enctype="text/plain">
+                  <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="JMÉNO" >
+                    <input name="name" class="app-form-control" placeholder="JMÉNO" >
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="EMAIL">
+                    <input name="mail" class="app-form-control" placeholder="EMAIL">
                   </div>
                   <div class="app-form-group">
-                    <input class="app-form-control" placeholder="TELEFON">
+                    <input name="phone" class="app-form-control" placeholder="TELEFON">
                   </div>
                   <div class="app-form-group message">
-                    <input  class="app-form-control" placeholder="ZPRÁVA">
+                    <input name="coment" class="app-form-control" placeholder="ZPRÁVA">
                   </div>
                   <div class="app-form-group buttons">
                     <button  onclick="openPage('index.html')" class="app-form-button">DOMŮ</button>
-                    <button   class="app-form-button">POSLAT</button>
+                    <button value="Send"  class="app-form-button">POSLAT</button>
+                  </form>
                   </div>
                 </div>
               </div>
