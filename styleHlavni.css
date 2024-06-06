@@ -145,6 +145,8 @@ nav ul li a:hover::before {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease;
+
+    
   }
 
   nav ul li {
@@ -164,6 +166,19 @@ nav ul li a:hover::before {
 @font-face {
   font-family: myFont;
   src: url(fontos.ttf);
+}
+
+@media (max-width: 600px) {
+  h4 {
+  color: #54a6da;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: myFont;
+}
 }
 
 h4 {
