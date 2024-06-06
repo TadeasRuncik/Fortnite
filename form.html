@@ -9,60 +9,47 @@
     <link rel="icon" type="image/x-icon" href="Bez názvu.png">
 </head>
 <body>
-  <script>
-    function openPage(pageUrl) {
-        window.location.href = pageUrl;
-    }
-</script>
-
     <div class="background">
         <div class="container">
-          <div class="screen">
-            <div class="screen-header">
-              <div class="screen-header-left">
-                <div class="screen-header-button close"></div>
-                <div class="screen-header-button maximize"></div>
-                <div class="screen-header-button minimize"></div>
-              </div>
-              <div class="screen-header-right">
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-              </div>
-            </div>
-            <div class="screen-body">
-              <div class="screen-body-item left">
-                <div class="app-title">
-                  <span>KONTAKT</span>
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
                 </div>
-                <div class="app-contact">Telefon : +420 775 199 099 </div>
-              </div>
-              <form  action="mailto:tadeasruncik@post.cz" method="post" enctype="text/plain">
-                  <div class="screen-body-item">
-                <div class="app-form">
-                  <div class="app-form-group">
-                    <input name="name" class="app-form-control" placeholder="JMÉNO" >
-                  </div>
-                  <div class="app-form-group">
-                    <input name="mail" class="app-form-control" placeholder="EMAIL">
-                  </div>
-                  <div class="app-form-group">
-                    <input name="phone" class="app-form-control" placeholder="TELEFON">
-                  </div>
-                  <div class="app-form-group message">
-                    <input name="coment" class="app-form-control" placeholder="ZPRÁVA">
-                  </div>
-                  <div class="app-form-group buttons">
-                    <button  onclick="openPage('index.html')" class="app-form-button">DOMŮ</button>
-                    <button value="Send"  class="app-form-button">POSLAT</button>
-                  </form>
-                  </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>KONTAKT</span>
+                        </div>
+                        <div class="app-contact">Telefon: +420 775 199 099</div>
+                    </div>
+                    <form action="mailto:tadeasruncik@post.cz" method="post" enctype="text/plain">
+                        <div class="screen-body-item">
+                            <div class="app-form">
+                                <div class="app-form-group">
+                                    <input name="name" class="app-form-control" placeholder="JMÉNO">
+                                </div>
+                                <div class="app-form-group">
+                                    <input name="mail" class="app-form-control" placeholder="EMAIL">
+                                </div>
+                                <div class="app-form-group">
+                                    <textarea name="message" class="app-form-control" placeholder="Zpráva"></textarea>
+                                </div>
+                                <button type="submit" class="app-form-button">Odeslat</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-
+    </div>
 </body>
 </html>
