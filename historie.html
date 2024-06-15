@@ -137,3 +137,25 @@
       <p>Nové lokace chráněné postavami z bitvy za úroveň 2, Ghost Henchmen nebo Henchmen. The Agency, The Rig, The Yacht, The Shark, The Grotto. Nové tajné základny a prolézačky po mapě.</p>
     </div>
   </div>
+
+  <button onclick="scrollToTop()" id="topButton" title="Go to top">Top</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
