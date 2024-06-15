@@ -17,14 +17,13 @@
           <li><a href="kvíz.html">Kvíz</a></li>
           <li><a href="form.html">Kontakt</a></li>
           <li><a href="zdroje.html">Zdroje</a></li>
-          
         </ul>
         <div class="menu-icon" onclick="toggleMenu()">
           <i class="fa fa-bars"></i>
         </div>
-      </nav>
+    </nav>
 
-      <script>
+    <script>
         let menuList = document.getElementById("menuList");
         menuList.style.maxHeight = "0px";
 
@@ -35,6 +34,10 @@
                 menuList.style.maxHeight = "0px";
             }
         }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 
@@ -44,7 +47,7 @@
         <div class="card">
           <img src="L1.webp" alt="Obrázek 1">
           <div class="card-content">
-            <h2>Brawler's Battleground  </h2>
+            <h2>Brawler's Battleground</h2>
             <p>Speciální jednotky jsou ve Fortnite vzácným skinem, které lze zakoupit v obchodě s předměty za 1 200 V-Bucks nebo se sadou Tabor Hill's Locker Bundle za  2 400 V-Bucks. Speciální jednotky byly poprvé vydány v 1. sezóně.</p>
           </div>
         </div>
@@ -148,43 +151,15 @@
           <div class="card">
             <img src="L12.webp" alt="Obrázek 4">
             <div class="card-content">
-              <h2>Snooty Steppes</h2>
+              <h2>Regal Ridge</h2>
               <p>Paradigma je vzácné skin ve Fortnite, které bylo možné zakoupit v obchodě s předměty za 1 200 V-Bucks. Paradigma byla poprvé vydána v X. sezóně a je součástí sady The Seven Set.
         
                 Paradigma je časově omezená  exkluzivně pro živou událost The End (Chapter 1).</p>
             </div>
           </div>
+    </div>
 
-          <div class="card">
-            <img src="L13.webp" alt="Obrázek 4">
-            <div class="card-content">
-              <h2>The Underworld</h2>
-              <p>Paradigma je vzácné skin ve Fortnite, které bylo možné zakoupit v obchodě s předměty za 1 200 V-Bucks. Paradigma byla poprvé vydána v X. sezóně a je součástí sady The Seven Set.
-        
-                Paradigma je časově omezená  exkluzivně pro živou událost The End (Chapter 1).</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="L14.webp" alt="Obrázek 4">
-            <div class="card-content">
-              <h2>Hazy Hillside</h2>
-              <p>Paradigma je vzácné skin ve Fortnite, které bylo možné zakoupit v obchodě s předměty za 1 200 V-Bucks. Paradigma byla poprvé vydána v X. sezóně a je součástí sady The Seven Set.
-        
-                Paradigma je časově omezená  exkluzivně pro živou událost The End (Chapter 1).</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="L15.webp" alt="Obrázek 4">
-            <div class="card-content">
-              <h2>Ritzy Riviera</h2>
-              <p>Paradigma je vzácné skin ve Fortnite, které bylo možné zakoupit v obchodě s předměty za 1 200 V-Bucks. Paradigma byla poprvé vydána v X. sezóně a je součástí sady The Seven Set.
-        
-                Paradigma je časově omezená  exkluzivně pro živou událost The End (Chapter 1).</p>
-            </div>
-          </div>
-            <button onclick="scrollToTop()" id="topButton" title="Go to top">Top</button>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top">Top</button>
 
     <script>
           window.onscroll = function() {scrollFunction()};
@@ -199,5 +174,6 @@
     }
 
     </script>
+
 </body>
 </html>
