@@ -45,7 +45,7 @@ body {
 
 @media (max-width: 768px) {
   .card {
-      flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
 
@@ -55,11 +55,7 @@ nav {
   justify-content: center;
   background: #333;
   height: 70px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  position: relative;
 }
 
 nav ul {
@@ -115,47 +111,36 @@ nav ul li a:hover::before {
   font-size: 30px;
 }
 
+
+
 @media (max-width: 600px) {
   nav {
-      justify-content: space-between;
-      padding: 0 30px;
+    justify-content: space-between;
+    padding: 0 30px;
   }
   nav ul {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      text-align: center;
-      background: #333;
-      gap: 0;
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.5s ease;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #333;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
   }
   nav ul li {
-      padding: 20px;
-      padding-top: 0;
+    padding: 20px;
+    padding-top: 0;
   }
   .menu-icon {
-      display: block;
+    display: block;
   }
   #menuList.active {
-      max-height: 300px; /* Adjust based on your content */
+    max-height: 300px; /* Adjust based on your content */
   }
-}
-
-h1 {
-  color: white;
-  font-size: 60px;
-  margin: 0;
-  font-family: myFont;
-  padding-top: 90px; /* Add padding to account for fixed nav */
-}
-
-h3 {
-  color: #fff;
-  font-size: 35px;
 }
 
 .row::after {
@@ -177,7 +162,7 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   [class*="col-"] {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -186,47 +171,80 @@ h3 {
   src: url(fontos.ttf);
 }
 
-.button-27 {
-  appearance: none;
-  background-color: #212121;
-  border: 2px solid #54a6da;
-  border-radius: 15px;
-  box-sizing: border-box;
-  color: #54a6da;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
+h1 {
+  color: white;
+  font-size: 60px;
   margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 20%;
-  will-change: transform;
+  font-family: myFont;
+}
+
+h3{
+color: #fff;
+font-size: 35px;
+}
+
+#fortniteImg {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.obrazek {
+  width: 150px;
+}
+
+
+#content {
+  padding: 20px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+
+/* CSS */
+.button-27 {
+appearance: none;
+background-color: #212121;
+border: 2px solid #54a6da;
+border-radius: 15px;
+box-sizing: border-box;
+color: #54a6da;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+min-height: 60px;
+min-width: 0;
+outline: none;
+padding: 16px 24px;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: 20%;
+will-change: transform;
+align-items: center;
 }
 
 .button-27:disabled {
-  pointer-events: none;
+pointer-events: none;
 }
 
 .button-27:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
 }
 
 .button-27:active {
-  box-shadow: none;
-  transform: translateY(0);
+box-shadow: none;
+transform: translateY(0);
 }
 
 #nadpis {
@@ -234,15 +252,15 @@ h3 {
   font-family: Arial, sans-serif; 
 }
 
-li {
+li{
   color: #fff;
 }
 
-.odkazy {
+.odkazy{
   color: #54a6da;
 }
 
-#popis {
+#popis{
   color: #fff;
 }
 
