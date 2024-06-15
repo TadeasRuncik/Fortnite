@@ -12,13 +12,13 @@
 
   <nav>
     <ul id="menuList">
-      <li><a href="index.html">Domů</a></li>
-      <li><a href="skiny.html">Skiny</a></li>
-      <li><a href="historie.html">Historie</a></li>
-      <li><a href="Lokace.html">Lokace</a></li>
-      <li><a href="kvíz.html">Kvíz</a></li>
-      <li><a href="form.html">Kontakt</a></li>
-      <li><a href="zdroje.html">Zdroje</a></li>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="skiny.html">Skiny</a></li>
+        <li><a href="historie.html">Historie</a></li>
+        <li><a href="Lokace.html">Lokace</a></li>
+        <li><a href="kvíz.html">Kvíz</a></li>
+        <li><a href="form.html">Kontakt</a></li>
+        <li><a href="zdroje.html">Zdroje</a></li>
     </ul>
     <div class="menu-icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
@@ -137,7 +137,7 @@
     <img src="12.webp" alt="Obrázek 12">
     <div class="card-content">
       <h2>4. Black Widow</h2>
-      <p>skint Black Widow je skin ze série MARVEL ve hře Fortnite, který lze zakoupit v obchodě s předměty za  500 V-Bucks. Skin Black Widow byl poprvé vydán v 8. sezóně a je součástí sady Avengers.</p>
+      <p>Black Widow je skin ze série MARVEL ve hře Fortnite, který lze zakoupit v obchodě s předměty za  500 V-Bucks. Skin Black Widow byl poprvé vydán v 8. sezóně a je součástí sady Avengers.</p>
     </div>
   </div>
 
@@ -153,8 +153,7 @@
     <img src="14.webp" alt="Obrázek 12">
     <div class="card-content">
       <h2>2. Renegade Raider</h2>
-       <p>Renegade Raider je vzácný skint ve Fortnite, který bylo možné zakoupit v Season Shopu za  1 200 V-Bucks po dosažení 20. úrovně. Renegade Raider byl vydán v 1. sezóně a je součástí sady Storm Scavenger Set.</p>
-    </p>
+       <p>Renegade Raider je vzácný skin ve Fortnite, který bylo možné zakoupit v Season Shopu za  1 200 V-Bucks po dosažení 20. úrovně. Renegade Raider byl vydán v 1. sezóně a je součástí sady Storm Scavenger Set.</p>
     </div>
   </div>
 
@@ -166,3 +165,25 @@
     </div>
   </div>
 
+  <!-- Tlačítko "Top" -->
+  <button onclick="scrollToTop()" id="topButton" title="Go to top">Top</button>
+
+  <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          const topButton = document.getElementById("topButton");
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              topButton.style.display = "block";
+          } else {
+              topButton.style.display = "none";
+          }
+      }
+
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+  </script>
+
+</body>
+</html>
