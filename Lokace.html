@@ -184,5 +184,20 @@
                 Paradigma je časově omezená  exkluzivně pro živou událost The End (Chapter 1).</p>
             </div>
           </div>
+            <button onclick="scrollToTop()" id="topButton" title="Go to top">Top</button>
+
+    <script>
+          window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      const topButton = document.getElementById("topButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    </script>
 </body>
 </html>
